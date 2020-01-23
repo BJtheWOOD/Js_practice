@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Testing Page" content="description">
+	<meta http-equiv="">
+	<title>Testing Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+</head>
+<body>
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="" alt="logo"></a>
+		<button class="navbar-toggler" data-toggle= "collapse" data-target= "#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-list active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-list">
+					<a class="nav-link" href="index.html">Team</a>
+				</li>
+				<li class="nav-list">
+					<a class="nav-link" href="#">Contact us</a>
+				</li>
+				<li class="nav-list">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<br>
+<button onclick="displayDate()">Click me!</button>
+<div id="practice"></div>
+<script>
+	var me = ["Bolaji", "Johnson", "28 years"];
+	var you = "Boy";
+	var pe = "Please locate where 'locate' occurs!";
+	console.log (pe.length + " " + pe.lastIndexOf("locate", 10));
+	
+
+	function displayDate() {
+		document.getElementById('practice').innerHTML = Date();
+	}
+
+function myFunction(p1,p2){
+  return(p1 / p2); 
+}
+
+alert("The correct answer is " + myFunction(5,3)); 
+</script>
+
+<script src="jquery/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
